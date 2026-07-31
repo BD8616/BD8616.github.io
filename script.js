@@ -37,31 +37,28 @@ particlesJS("particles-js", {
     interactivity: {
         detect_on: "canvas",
 
-        events: {
-            onhover: {
-                enable: true,
-                mode: "grab"
-            },
-
-            onclick: {
-                enable: true,
-                mode: "push"
-            }
+         events:{
+        onhover:{
+            enable:true,
+            mode:"attract"
         },
-
-        modes: {
-            grab: {
-                distance: 180,
-                line_linked: {
-                    opacity: 1
-                }
-            },
-
-            push: {
-                particles_nb: 4
-            }
+        onclick:{
+            enable:true,
+            mode:"push"
         }
     },
 
+    modes:{
+        attract:{
+            distance:200,
+            duration:0.4,
+            factor:5
+        },
+
+        push:{
+            particles_nb:4
+        }
+    }
+}
     retina_detect: true
 });
