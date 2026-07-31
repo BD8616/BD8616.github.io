@@ -1,64 +1,79 @@
-particlesJS("particles-js", {
+tsParticles.load("tsparticles", {
+    background: {
+        color: "#000000"
+    },
+
+    fpsLimit: 120,
+
     particles: {
         number: {
-            value: 120
+            value: 120,
+            density: {
+                enable: true,
+                value_area: 800
+            }
         },
 
         color: {
             value: "#8A2BE2"
         },
 
-        shape: {
-            type: "circle"
-        },
-
-        opacity: {
-            value: 0.5
-        },
-
-        size: {
-            value: 3
-        },
-
-        line_linked: {
+        links: {
             enable: true,
             distance: 150,
             color: "#8A2BE2",
-            opacity: 0.4,
+            opacity: 0.45,
             width: 1
         },
 
         move: {
             enable: true,
             speed: 2
+        },
+
+        opacity: {
+            value: 0.6
+        },
+
+        size: {
+            value: {
+                min: 2,
+                max: 4
+            }
         }
     },
 
     interactivity: {
-        detect_on: "canvas",
+        events: {
+            onHover: {
+                enable: true,
+                mode: ["grab", "repulse"]
+            },
 
-         events:{
-        onhover:{
-            enable:true,
-            mode:"attract"
+            onClick: {
+                enable: true,
+                mode: "push"
+            }
         },
-        onclick:{
-            enable:true,
-            mode:"push"
+
+        modes: {
+            grab: {
+                distance: 220,
+                links: {
+                    opacity: 1
+                }
+            },
+
+            repulse: {
+                distance: 120,
+                duration: 0.4
+            },
+
+            push: {
+                quantity: 4
+            }
         }
     },
 
-    modes:{
-        attract:{
-            distance:200,
-            duration:0.4,
-            factor:5
-        },
-
-        push:{
-            particles_nb:4
-        }
-    }
-}
-    retina_detect: true
+    detectRetina: true
 });
