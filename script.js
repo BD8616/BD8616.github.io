@@ -1,21 +1,12 @@
-
-tsParticles.load("tsparticles", {
-
-    background: {
-        color: {
-            value: "#000000"
-        }
-    },
-
-    fpsLimit: 120,
+particlesJS("particles-js", {
 
     particles: {
 
         number: {
-            value: 120,
+            value: 100,
             density: {
                 enable: true,
-                area: 800
+                value_area: 800
             }
         },
 
@@ -28,47 +19,40 @@ tsParticles.load("tsparticles", {
         },
 
         opacity: {
-            value: 0.6
+            value: 0.5
         },
 
         size: {
-            value: {
-                min: 2,
-                max: 4
-            }
+            value: 3
         },
 
-        links: {
+        line_linked: {
             enable: true,
             distance: 150,
             color: "#8A2BE2",
-            opacity: 0.45,
+            opacity: 0.5,
             width: 1
         },
 
         move: {
             enable: true,
-            speed: 2,
-            direction: "none",
-            random: false,
-            straight: false,
-            outModes: {
-                default: "bounce"
-            }
+            speed: 2
         }
 
     },
 
     interactivity: {
 
+        detect_on: "canvas",
+
         events: {
 
-            onHover: {
+            onhover: {
                 enable: true,
                 mode: "grab"
             },
 
-            onClick: {
+            onclick: {
                 enable: true,
                 mode: "push"
             },
@@ -80,20 +64,20 @@ tsParticles.load("tsparticles", {
         modes: {
 
             grab: {
-                distance: 220,
-                links: {
+                distance: 200,
+                line_linked: {
                     opacity: 1
                 }
             },
 
             push: {
-                quantity: 4
+                particles_nb: 4
             }
 
         }
 
     },
 
-    detectRetina: true
+    retina_detect: true
 
 });
