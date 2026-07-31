@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo Interactivo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fondo Interactivo</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        body{
-            background:#000000;
-            height:100vh;
-            overflow:hidden;
-        }
-    </style>
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000000;
+}
+
+#web_bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000000 !important;
+    z-index:-2;
+}
+</style>
+
 </head>
 <body>
+
+<div id="web_bg"></div>
 
 <script
     id="canvas_nest"
