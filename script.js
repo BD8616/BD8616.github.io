@@ -18,9 +18,13 @@ particlesJS("particles-js", {
             type: "circle"
         },
 
-        opacity: {
-            value: 0.6
-        },
+        opacity:{
+    value:0.7,
+    anim:{
+        enable:true,
+        speed:1
+    }
+}
 
         size: {
             value: 3,
@@ -35,16 +39,14 @@ particlesJS("particles-js", {
             width: 1
         },
 
-        move: {
-
-            enable: true,
-            speed: 2,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out"
-
-        }
+      move:{
+    enable:true,
+    speed:1,
+    direction:"none",
+    random:true,
+    straight:false,
+    out_mode:"bounce"
+}
 
     },
 
