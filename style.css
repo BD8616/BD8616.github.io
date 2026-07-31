@@ -9,6 +9,7 @@ body{
     background:#000;
     color:#fff;
     overflow-x:hidden;
+    min-height:100vh;
 }
 
 #particles-js{
@@ -16,35 +17,34 @@ body{
     top:0;
     left:0;
     width:100%;
-    height:100%;
-    z-index:-1;
+    height:100vh;
+    z-index:0;
 }
 
 .navbar{
-
     position:fixed;
-
     top:0;
     left:0;
-
     width:100%;
-
     height:70px;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:0 50px;
 
     background:rgba(0,0,0,.5);
-
     backdrop-filter:blur(10px);
 
     z-index:100;
+}
 
+
+.hero,
+.cards{
+    position:relative;
+    z-index:1;
 }
 
 .logo{
