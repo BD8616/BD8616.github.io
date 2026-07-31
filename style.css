@@ -87,3 +87,64 @@ p{
 .menu a:hover{
     color: #8A2BE2;
 }
+
+.cards{
+    position: relative;
+    z-index: 10;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 140px auto 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+
+    width: 330px;
+    min-height: 230px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(138,43,226,.5);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    padding: 25px;
+
+    color: white;
+
+    transition: .35s;
+}
+
+.card:hover{
+
+    transform: translateY(-10px);
+
+    border-color:#8A2BE2;
+
+    box-shadow:0 0 25px rgba(138,43,226,.5);
+
+}
+
+.card h2{
+
+    color:#8A2BE2;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#d6d6d6;
+
+    line-height:1.7;
+
+}
