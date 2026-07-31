@@ -3,10 +3,10 @@ particlesJS("particles-js", {
     particles: {
 
         number: {
-            value: 100,
+            value: 120,
             density: {
                 enable: true,
-                value_area: 800
+                value_area: 900
             }
         },
 
@@ -19,11 +19,12 @@ particlesJS("particles-js", {
         },
 
         opacity: {
-            value: 0.5
+            value: 0.6
         },
 
         size: {
-            value: 3
+            value: 3,
+            random: true
         },
 
         line_linked: {
@@ -35,11 +36,18 @@ particlesJS("particles-js", {
         },
 
         move: {
+
             enable: true,
-            speed: 2
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out"
+
         }
 
     },
+
 
     interactivity: {
 
@@ -61,22 +69,30 @@ particlesJS("particles-js", {
 
         },
 
+
         modes: {
 
             grab: {
+
                 distance: 200,
+
                 line_linked: {
                     opacity: 1
                 }
+
             },
 
+
             push: {
-                particles_nb: 4
+
+                particles_nb: 5
+
             }
 
         }
 
     },
+
 
     retina_detect: true
 
