@@ -97,4 +97,3 @@ tsParticles.load("tsparticles", {
     detectRetina: true
 
 });
-```
