@@ -1,174 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Benjamin | Portafolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Iconos -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
 
-    <!-- Fondo interactivo -->
-    <div id="tsparticles"></div>
+    <div id="particles-js"></div>
 
-    <!-- Barra superior -->
     <header>
-
         <nav class="navbar">
+            <div class="logo">Benjamin</div>
 
-            <a href="#" class="logo">
-                Benjamin
-            </a>
-
-            <ul class="nav-links">
-
-                <li><a href="#inicio">Inicio</a></li>
-
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-
-                <li><a href="#habilidades">Habilidades</a></li>
-
-                <li><a href="#proyectos">Proyectos</a></li>
-
-                <li><a href="#contacto">Contacto</a></li>
-
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- Inicio -->
-    <section id="inicio" class="hero">
-
-        <div class="hero-content">
-
-            <h1>Benjamin Guajardo</h1>
-
-            <h2>Estudiante de Inginieria en Informatica y Ciberseguridad</h2>
-
-            <p>
-                Bienvenido a mi portafolio.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#proyectos" class="btn">
-                    Ver proyectos
-                </a>
-
-                <a href="assets/CV.pdf" class="btn btn-outline" download>
-                    Descargar CV
-                </a>
-
-            </div>
-
-        </div>
-
+    <section class="hero">
+        <h1>Benjamin</h1>
+        <p>Ingeniería Informática y Ciberseguridad</p>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi">
-
-        <h2 class="titulo">Sobre mí</h2>
+    <section class="cards">
 
         <div class="card">
+            <h2>Sobre mí</h2>
+            <p>Escribe aquí tu información.</p>
+        </div>
 
-            <p>
-                Escribe aquí tu presentación.
-            </p>
+        <div class="card">
+            <h2>Proyectos</h2>
+            <p>Aquí aparecerán tus proyectos.</p>
+        </div>
 
+        <div class="card">
+            <h2>Contacto</h2>
+            <p>Correo, GitHub y LinkedIn.</p>
         </div>
 
     </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades">
-
-        <h2 class="titulo">Habilidades</h2>
-
-        <div class="cards">
-
-            <div class="card">HTML</div>
-
-            <div class="card">CSS</div>
-
-            <div class="card">JavaScript</div>
-
-            <div class="card">Python</div>
-
-            <div class="card">Linux</div>
-
-            <div class="card">Wazuh</div>
-
-        </div>
-
-    </section>
-
-    <!-- Proyectos -->
-    <section id="proyectos">
-
-        <h2 class="titulo">Proyectos</h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>Proyecto 1</h3>
-
-                <p>Descripción del proyecto.</p>
-
-            </div>
-
-            <div class="card">
-
-                <h3>Proyecto 2</h3>
-
-                <p>Descripción del proyecto.</p>
-
-            </div>
-
-            <div class="card">
-
-                <h3>Proyecto 3</h3>
-
-                <p>Descripción del proyecto.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto">
-
-        <h2 class="titulo">Contacto</h2>
-
-        <div class="social">
-
-            <a href="#"><i class="fab fa-github"></i></a>
-
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-
-            <a href="#"><i class="fas fa-envelope"></i></a>
-
-        </div>
-
-    </section>
-
-<script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3/tsparticles.all.bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
