@@ -1,116 +1,279 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Benjamin | Portafolio</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-    <div id="particles-js"></div>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Benjamin</div>
+<div id="particles-js"></div>
 
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Benjamin</h1>
-        <p> Estudiante Ingeniería Informática y Ciberseguridad</p>
-    </section>
+<header>
 
-    <section class="cards">
+    <nav class="navbar">
 
-        <div class="card">
-            <h2>Sobre mí</h2>
-            <p>información.</p>
+        <div class="logo">
+            Benjamin
         </div>
 
-        <div class="card">
-            <h2>Proyectos</h2>
-            <p>Aquí aparecerán tus proyectos.</p>
-        </div>
 
-        <div class="card">
-            <h2>Contacto</h2>
-            <p>Correo, GitHub y LinkedIn.</p>
-        </div>
+        <ul class="menu">
 
-    </section>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        </ul>
+
+
+    </nav>
+
+</header>
+
+
+
+<section class="hero">
+
+    <h1>Benjamin</h1>
+
+    <p>
+        Estudiante Ingeniería Informática y Ciberseguridad
+    </p>
+
+</section>
+
+
+
+
+<section class="cards">
+
+
+    <div class="card">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Información sobre mi perfil profesional.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>Proyectos</h2>
+
+        <p>
+            Proyectos de informática y ciberseguridad.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>Contacto</h2>
+
+        <p>
+            GitHub, LinkedIn y correo.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 
 <script>
-particlesJS("particles-js",{
+
+particlesJS("particles-js", {
+
+
     particles:{
+
+
         number:{
-            value:100,
+
+            value:120,
+
             density:{
+
                 enable:true,
+
                 value_area:800
+
             }
+
         },
+
+
         color:{
+
             value:"#8A2BE2"
+
         },
+
+
         shape:{
+
             type:"circle"
+
         },
+
+
         opacity:{
-            value:0.5
+
+            value:0.6
+
         },
+
+
         size:{
-            value:3
+
+            value:3,
+
+            random:true
+
         },
+
+
         line_linked:{
+
+
             enable:true,
+
             distance:150,
+
             color:"#8A2BE2",
+
             opacity:0.5,
+
             width:1
+
+
         },
+
+
         move:{
+
+
             enable:true,
-            speed:2
+
+            speed:2,
+
+            random:true,
+
+            straight:false,
+
+            out_mode:"out"
+
+
         }
+
+
     },
+
+
+
     interactivity:{
+
+
+        detect_on:"canvas",
+
+
         events:{
+
+
             onhover:{
+
                 enable:true,
+
                 mode:"grab"
+
             },
+
+
             onclick:{
+
                 enable:true,
+
                 mode:"push"
-            }
-        },
-        modes:{
-            grab:{
-                distance:180,
-                line_linked:{
-                    opacity:1
-                }
+
             },
+
+
+            resize:true
+
+
+        },
+
+
+        modes:{
+
+
+            grab:{
+
+
+                distance:200,
+
+
+                line_linked:{
+
+
+                    opacity:1
+
+
+                }
+
+
+            },
+
+
             push:{
-                particles_nb:4
+
+
+                particles_nb:5
+
+
             }
+
+
         }
+
+
     },
+
+
+
     retina_detect:true
+
+
 });
+
+
 </script>
 
 
+
 </body>
+
 </html>
