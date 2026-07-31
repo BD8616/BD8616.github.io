@@ -1,5 +1,0 @@
-body{
-    margin: 0;
-    background: #ffffff;
-    overflow-x: hidden;
-}
