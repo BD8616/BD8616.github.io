@@ -1,4 +1,4 @@
-javascript id="olqvtq"
+
 tsParticles.load("tsparticles", {
 
     background: {
