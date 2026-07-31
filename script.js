@@ -41,14 +41,11 @@ particlesJS("particles-js", {
 
       move:{
     enable:true,
-    speed:1,
-    direction:"none",
+    speed:1.5,
     random:true,
     straight:false,
-    out_mode:"bounce"
+    out_mode:"out"
 }
-
-    },
 
 
     interactivity: {
