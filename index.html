@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fondo Interactivo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo Interactivo Morado</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-html,body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#000000;
-}
+        html, body{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            background:#000000;
+        }
 
-#web_bg{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#000000 !important;
-    z-index:-2;
-}
-</style>
+        #web_bg{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#000000;
+            z-index:-2;
+        }
+    </style>
+</head>
 
-
+<body>
 
 <div id="web_bg"></div>
 
@@ -39,6 +40,7 @@ html,body{
     opacity="0.5"
     count="150"
     zIndex="-1"
+    mobile="true"
     src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js">
 </script>
 
