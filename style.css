@@ -1,13 +1,8 @@
-
-{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 body{
@@ -16,19 +11,14 @@ body{
     overflow-x:hidden;
 }
 
-/* ===========================
-   Fondo interactivo
-=========================== */
-
-#tsparticles{
+#particles-js{
     position:fixed;
-    inset:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     z-index:-1;
 }
-
-/* ===========================
-   Barra de navegación
-=========================== */
 
 .navbar{
 
@@ -38,7 +28,8 @@ body{
     left:0;
 
     width:100%;
-    height:75px;
+
+    height:70px;
 
     display:flex;
 
@@ -46,15 +37,13 @@ body{
 
     align-items:center;
 
-    padding:0 70px;
+    padding:0 50px;
 
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,.5);
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(10px);
 
-    border-bottom:1px solid rgba(138,43,226,.2);
-
-    z-index:1000;
+    z-index:100;
 
 }
 
@@ -62,45 +51,35 @@ body{
 
     color:white;
 
-    text-decoration:none;
-
-    font-size:30px;
+    font-size:28px;
 
     font-weight:bold;
 
 }
 
-.nav-links{
+.menu{
 
     display:flex;
 
-    gap:35px;
+    gap:30px;
 
     list-style:none;
 
 }
 
-.nav-links a{
-
-    text-decoration:none;
+.menu a{
 
     color:white;
 
-    transition:.3s;
-
-    font-size:17px;
+    text-decoration:none;
 
 }
 
-.nav-links a:hover{
+.menu a:hover{
 
     color:#8A2BE2;
 
 }
-
-/* ===========================
-   Hero
-=========================== */
 
 .hero{
 
@@ -108,141 +87,65 @@ body{
 
     display:flex;
 
+    flex-direction:column;
+
     justify-content:center;
 
     align-items:center;
 
     text-align:center;
 
-    padding:20px;
+}
+
+.hero h1{
+
+    font-size:70px;
 
 }
 
-.hero-content h1{
+.hero p{
 
-    font-size:65px;
+    font-size:22px;
 
-    margin-bottom:10px;
+    color:#bbb;
 
-}
-
-.hero-content h2{
-
-    color:#8A2BE2;
-
-    font-size:40px;
-
-    margin-bottom:20px;
+    margin-top:15px;
 
 }
-
-.hero-content p{
-
-    color:#d6d6d6;
-
-    font-size:20px;
-
-    margin-bottom:40px;
-
-}
-
-/* ===========================
-   Botones
-=========================== */
-
-.hero-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-.btn{
-
-    padding:15px 35px;
-
-    background:#8A2BE2;
-
-    color:white;
-
-    border-radius:10px;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 0 25px rgba(138,43,226,.6);
-
-}
-
-.btn-outline{
-
-    background:transparent;
-
-    border:2px solid #8A2BE2;
-
-}
-
-/* ===========================
-   Secciones
-=========================== */
-
-section{
-
-    padding:120px 10%;
-
-}
-
-.titulo{
-
-    text-align:center;
-
-    font-size:40px;
-
-    margin-bottom:50px;
-
-    color:#8A2BE2;
-
-}
-
-/* ===========================
-   Tarjetas
-=========================== */
 
 .cards{
 
-    display:grid;
+    width:90%;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    margin:auto;
+
+    display:flex;
 
     gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    padding-bottom:100px;
 
 }
 
 .card{
 
+    width:320px;
+
     background:rgba(255,255,255,.05);
 
-    border:1px solid rgba(138,43,226,.4);
+    border:1px solid rgba(138,43,226,.5);
 
     border-radius:20px;
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(12px);
 
     padding:30px;
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -250,13 +153,11 @@ section{
 
     transform:translateY(-10px);
 
-    border-color:#8A2BE2;
-
-    box-shadow:0 0 30px rgba(138,43,226,.5);
+    box-shadow:0 0 25px rgba(138,43,226,.5);
 
 }
 
-.card h3{
+.card h2{
 
     color:#8A2BE2;
 
@@ -266,81 +167,6 @@ section{
 
 .card p{
 
-    color:#d6d6d6;
-
-    line-height:1.8;
+    color:#ddd;
 
 }
-
-/* ===========================
-   Redes sociales
-=========================== */
-
-.social{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    margin-top:20px;
-
-}
-
-.social a{
-
-    color:white;
-
-    font-size:35px;
-
-    transition:.3s;
-
-}
-
-.social a:hover{
-
-    color:#8A2BE2;
-
-    transform:scale(1.2);
-
-}
-
-/* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:900px){
-
-.navbar{
-
-    padding:0 25px;
-
-}
-
-.nav-links{
-
-    gap:18px;
-
-}
-
-.hero-content h1{
-
-    font-size:45px;
-
-}
-
-.hero-content h2{
-
-    font-size:30px;
-
-}
-
-.titulo{
-
-    font-size:30px;
-
-}
-
-}
-
