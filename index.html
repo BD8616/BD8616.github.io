@@ -1,379 +1,173 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mi Portafolio</title>
+<title>Fondo Interactivo</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#000;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-/* Fondo */
-
-#particles-js{
+#tsparticles{
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    inset:0;
     z-index:-1;
 }
 
-/* Barra */
-
 nav{
-
     position:fixed;
-
     top:0;
     left:0;
-
     width:100%;
     height:70px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:0 60px;
-
+    padding:0 50px;
     background:rgba(0,0,0,.45);
-
-    backdrop-filter:blur(12px);
-
-    z-index:1000;
-
+    backdrop-filter:blur(10px);
+    z-index:100;
 }
 
 .logo{
-
-    color:white;
-
+    color:#fff;
     font-size:28px;
-
     font-weight:bold;
-
 }
 
 nav ul{
-
     display:flex;
-
     gap:35px;
-
     list-style:none;
-
 }
 
 nav a{
-
-    color:white;
-
+    color:#fff;
     text-decoration:none;
-
     transition:.3s;
-
 }
 
 nav a:hover{
-
     color:#8A2BE2;
-
 }
-
-/* Hero */
-
-.hero{
-
-    height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-/* Tarjetas */
-
-.cards{
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding-bottom:100px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-
-}
-
-.card{
-
-    width:340px;
-
-    min-height:250px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(138,43,226,.4);
-
-    border-radius:20px;
-
-    backdrop-filter:blur(15px);
-
-    padding:25px;
-
-    transition:.35s;
-
-}
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#8A2BE2;
-
-    box-shadow:0 0 30px rgba(138,43,226,.5);
-
-}
-
-.card h2{
-
-    color:#8A2BE2;
-
-    margin-bottom:15px;
-
-}
-
-.card p{
-
-    color:#ddd;
-
-    line-height:1.8;
-
-}
-
 </style>
 
 </head>
-
 <body>
 
-<div id="particles-js"></div>
+<div id="tsparticles"></div>
 
 <nav>
+    <div class="logo">Benjamin</div>
 
-<div class="logo">
-Benjamin
-</div>
-
-<ul>
-
-<li><a href="#">Inicio</a></li>
-
-<li><a href="#">Sobre mí</a></li>
-
-<li><a href="#">Proyectos</a></li>
-
-<li><a href="#">CV</a></li>
-
-</ul>
-
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">CV</a></li>
+    </ul>
 </nav>
 
-<section class="hero">
-</section>
-
-<section class="cards">
-
-<div class="card">
-
-<h2>Sobre mí</h2>
-
-<p>
-
-Aquí puedes escribir una presentación sobre ti.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Proyectos</h2>
-
-<p>
-
-Muestra aquí tus proyectos de programación y ciberseguridad.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Certificaciones</h2>
-
-<p>
-
-Agrega tus certificados, cursos y tecnologías.
-
-</p>
-
-</div>
-
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 <script>
+tsParticles.load("tsparticles",{
 
-particlesJS("particles-js",{
+background:{
+    color:"#000000"
+},
+
+fpsLimit:120,
 
 particles:{
 
-number:{
+    number:{
+        value:120
+    },
 
-value:120,
+    color:{
+        value:"#8A2BE2"
+    },
 
-density:{
+    links:{
+        enable:true,
+        distance:150,
+        color:"#8A2BE2",
+        opacity:0.45,
+        width:1
+    },
 
-enable:true,
+    move:{
+        enable:true,
+        speed:2
+    },
 
-value_area:900
+    opacity:{
+        value:0.6
+    },
 
-}
-
-},
-
-color:{
-
-value:"#8A2BE2"
-
-},
-
-shape:{
-
-type:"circle"
-
-},
-
-opacity:{
-
-value:0.5
-
-},
-
-size:{
-
-value:3
-
-},
-
-line_linked:{
-
-enable:true,
-
-distance:150,
-
-color:"#8A2BE2",
-
-opacity:0.4,
-
-width:1
-
-},
-
-move:{
-
-enable:true,
-
-speed:2
-
-}
+    size:{
+        value:{min:2,max:4}
+    }
 
 },
 
 interactivity:{
 
-events:{
+    events:{
 
-onhover:{
+        onHover:{
+            enable:true,
+            mode:["grab","repulse"]
+        },
 
-enable:true,
+        onClick:{
+            enable:true,
+            mode:"push"
+        }
 
-mode:"grab"
+    },
 
-},
+    modes:{
 
-onclick:{
+        grab:{
+            distance:220,
+            links:{
+                opacity:1
+            }
+        },
 
-enable:true,
+        repulse:{
+            distance:120,
+            duration:0.4
+        },
 
-mode:"push"
+        push:{
+            quantity:4
+        }
 
-}
-
-},
-
-modes:{
-
-grab:{
-
-distance:180,
-
-line_linked:{
-
-opacity:1
-
-}
-
-},
-
-push:{
-
-particles_nb:4
-
-}
-
-}
+    }
 
 },
 
-retina_detect:true
+detectRetina:true
 
 });
-
 </script>
 
 </body>
 </html>
+```
