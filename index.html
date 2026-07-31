@@ -1,113 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo Interactivo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<title>Mi Página</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+}
+
+/* Fondo */
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+/* Barra superior */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+/* Logo */
+
+.logo{
+    color:#8A2BE2;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* Menú */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#8A2BE2;
+}
+
+</style>
+
+</head>
+
 <body>
 
-<nav class="navbar">
-    <div class="logo">Mi Sitio</div>
+<div id="particles-js"></div>
 
-    <ul class="menu">
+<nav>
+
+    <div class="logo">
+        LOGO
+    </div>
+
+    <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Sobre mí</a></li>
         <li><a href="#">Proyectos</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
+
 </nav>
-        html,
-        body{
-            width:100%;
-            height:100%;
-            background:#000000;
-            overflow:hidden;
-        }
-
-        #particles-js{
-            position:fixed;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-        }
-    </style>
-</head>
-<body>
-
-<div id="particles-js"></div>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 <script>
+
 particlesJS("particles-js",{
-    "particles":{
-        "number":{
-            "value":120,
-            "density":{
-                "enable":true,
-                "value_area":800
+
+    particles:{
+        number:{
+            value:120,
+            density:{
+                enable:true,
+                value_area:800
             }
         },
-        "color":{
-            "value":"#8A2BE2"
+
+        color:{
+            value:"#8A2BE2"
         },
-        "shape":{
-            "type":"circle"
+
+        shape:{
+            type:"circle"
         },
-        "opacity":{
-            "value":0.2
+
+        opacity:{
+            value:0.5
         },
-        "size":{
-            "value":3
+
+        size:{
+            value:3
         },
-        "line_linked":{
-            "enable":true,
-            "distance":150,
-            "color":"#8A2BE2",
-            "opacity":0.2,
-            "width":1
+
+        line_linked:{
+            enable:true,
+            distance:150,
+            color:"#8A2BE2",
+            opacity:0.4,
+            width:1
         },
-        "move":{
-            "enable":true,
-            "speed":2,
-            "out_mode":"out"
+
+        move:{
+            enable:true,
+            speed:2,
+            out_mode:"out"
         }
     },
-    "interactivity":{
-        "detect_on":"canvas",
-        "events":{
-            "onhover":{
-                "enable":true,
-                "mode":"grab"
+
+    interactivity:{
+        detect_on:"canvas",
+
+        events:{
+            onhover:{
+                enable:true,
+                mode:"grab"
             },
-            "onclick":{
-                "enable":true,
-                "mode":"push"
+
+            onclick:{
+                enable:true,
+                mode:"push"
             },
-            "resize":true
+
+            resize:true
         },
-        "modes":{
-            "grab":{
-                "distance":180,
-                "line_linked":{
-                    "opacity":1
+
+        modes:{
+            grab:{
+                distance:180,
+
+                line_linked:{
+                    opacity:1
                 }
             },
-            "push":{
-                "particles_nb":4
+
+            push:{
+                particles_nb:4
             }
         }
     },
-    "retina_detect":true
+
+    retina_detect:true
+
 });
+
 </script>
 
 </body>
