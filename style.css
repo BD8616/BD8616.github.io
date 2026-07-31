@@ -9,22 +9,35 @@ body{
     background:#000;
     color:#fff;
     overflow-x:hidden;
-    min-height:100vh;
 }
 
+
+/* Fondo partículas */
 #particles-js{
+
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
     height:100vh;
+
+    background:#000;
+
     z-index:0;
+
 }
 
+
+/* Barra superior */
 .navbar{
+
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
     height:70px;
 
@@ -35,27 +48,24 @@ body{
     padding:0 50px;
 
     background:rgba(0,0,0,.5);
+
     backdrop-filter:blur(10px);
 
-    z-index:100;
+    z-index:10;
+
 }
 
-
-.hero,
-.cards{
-    position:relative;
-    z-index:1;
-}
 
 .logo{
 
-    color:white;
+    color:#8A2BE2;
 
     font-size:28px;
 
     font-weight:bold;
 
 }
+
 
 .menu{
 
@@ -67,13 +77,17 @@ body{
 
 }
 
+
 .menu a{
 
     color:white;
 
     text-decoration:none;
 
+    transition:.3s;
+
 }
+
 
 .menu a:hover{
 
@@ -81,7 +95,15 @@ body{
 
 }
 
+
+
+/* Texto principal */
+
 .hero{
+
+    position:relative;
+
+    z-index:2;
 
     height:100vh;
 
@@ -97,11 +119,17 @@ body{
 
 }
 
+
 .hero h1{
 
     font-size:70px;
 
+    color:#8A2BE2;
+
+    text-shadow:0 0 20px rgba(138,43,226,.8);
+
 }
+
 
 .hero p{
 
@@ -113,7 +141,15 @@ body{
 
 }
 
+
+
+/* Tarjetas */
+
 .cards{
+
+    position:relative;
+
+    z-index:2;
 
     width:90%;
 
@@ -130,6 +166,7 @@ body{
     padding-bottom:100px;
 
 }
+
 
 .card{
 
@@ -149,13 +186,15 @@ body{
 
 }
 
+
 .card:hover{
 
     transform:translateY(-10px);
 
-    box-shadow:0 0 25px rgba(138,43,226,.5);
+    box-shadow:0 0 25px rgba(138,43,226,.6);
 
 }
+
 
 .card h2{
 
@@ -164,6 +203,7 @@ body{
     margin-bottom:15px;
 
 }
+
 
 .card p{
 
