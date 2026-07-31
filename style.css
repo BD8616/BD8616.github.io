@@ -42,3 +42,48 @@ p{
     font-size:22px;
     color:#b9b9b9;
 }
+
+/* Barra superior */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.logo{
+    color: #8A2BE2;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: #8A2BE2;
+}
