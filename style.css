@@ -176,33 +176,25 @@ body{
 
 .hero{
 
-
     position:relative;
-
 
     z-index:2;
 
-
-    height:100vh;
-
+    min-height:70vh;
 
     display:flex;
 
-
     flex-direction:column;
-
 
     justify-content:center;
 
-
     align-items:center;
-
 
     text-align:center;
 
+    padding:120px 20px 60px;
 
 }
-
 
 /* Titulo en medio */
 
