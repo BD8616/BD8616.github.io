@@ -343,3 +343,74 @@ body{
 
 
 }
+
+
+/* ============================
+   HABILIDADES
+============================ */
+
+.skills{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    margin:80px auto;
+
+    text-align:center;
+
+}
+
+.skills h2{
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+    color:#ffffff;
+
+}
+
+.skills-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.skill{
+
+    padding:12px 25px;
+
+    border:1px solid #8A2BE2;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#ffffff;
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.skill:hover{
+
+    background:#8A2BE2;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px rgba(138,43,226,.6);
+
+}
