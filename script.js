@@ -18,13 +18,13 @@ particlesJS("particles-js", {
             type: "circle"
         },
 
-        opacity:{
-    value:0.7,
-    anim:{
-        enable:true,
-        speed:1
-    }
-}
+        opacity: {
+            value: 0.7,
+            anim: {
+                enable: true,
+                speed: 1
+            }
+        },
 
         size: {
             value: 3,
@@ -39,14 +39,15 @@ particlesJS("particles-js", {
             width: 1
         },
 
-      move:{
-    enable:true,
-    speed:1.5,
-    random:true,
-    straight:false,
-    out_mode:"out"
-}
+        move: {
+            enable: true,
+            speed: 1.5,
+            random: true,
+            straight: false,
+            out_mode: "out"
+        }
 
+    },
 
     interactivity: {
 
@@ -68,7 +69,6 @@ particlesJS("particles-js", {
 
         },
 
-
         modes: {
 
             grab: {
@@ -81,17 +81,13 @@ particlesJS("particles-js", {
 
             },
 
-
             push: {
-
                 particles_nb: 5
-
             }
 
         }
 
     },
-
 
     retina_detect: true
 
