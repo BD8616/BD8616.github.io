@@ -422,3 +422,131 @@ body{
     box-shadow:0 0 12px rgba(138,43,226,.45);
 
 }
+
+/* ============================
+   SOBRE MÍ
+============================ */
+
+.about-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+}
+
+.about-box{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(138,43,226,.5);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+
+    padding:40px;
+
+}
+
+.about-box h2{
+
+    color:#8A2BE2;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.about-box p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* ============================
+   CERTIFICADOS
+============================ */
+
+.certificados{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+}
+
+.certificados h2{
+
+    color:#8A2BE2;
+
+    font-size:36px;
+
+    margin-bottom:30px;
+
+}
+
+.certificados-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+.certificado-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(138,43,226,.5);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.certificado-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(138,43,226,.5);
+
+}
+
+.certificado-card h3{
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+}
+
+.certificado-card p{
+
+    color:#ccc;
+
+}
