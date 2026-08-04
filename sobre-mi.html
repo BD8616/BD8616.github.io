@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre mí</title>
+    <title>Sobre mí | Benjamin</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -14,108 +14,103 @@
 
 <body>
 
-<body>
+    <!-- Fondo de partículas -->
     <div id="particles-js"></div>
-   
-    <!-- Librerías -->
+
+    <!-- Barra superior -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Benjamin
+            </div>
+
+            <ul class="menu">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Título -->
+    <section class="hero">
+
+        <h1>Sobre mí</h1>
+
+        <p>
+            Conoce un poco más sobre mi trayectoria.
+        </p>
+
+    </section>
+
+    <!-- Información -->
+    <section class="about-container">
+
+        <div class="about-box">
+
+            <h2>¿Quién soy?</h2>
+
+            <p>
+                Aquí escribiré una descripción sobre mí, mis estudios, mis intereses
+                en informática y ciberseguridad, y los objetivos que quiero alcanzar.
+            </p>
+
+            <p>
+                También puedo agregar información sobre los proyectos que he realizado
+                y las tecnologías que utilizo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Certificados -->
+    <section class="certificados">
+
+        <h2>Certificados</h2>
+
+        <div class="certificados-grid">
+
+            <div class="certificado-card">
+
+                <h3>Certificado 1</h3>
+
+                <p>Descripción del certificado.</p>
+
+            </div>
+
+            <div class="certificado-card">
+
+                <h3>Certificado 2</h3>
+
+                <p>Descripción del certificado.</p>
+
+            </div>
+
+            <div class="certificado-card">
+
+                <h3>Certificado 3</h3>
+
+                <p>Descripción del certificado.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Partículas -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <script src="script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-<script>
-
-particlesJS("particles-js", {
-
-    particles:{
-
-        number:{
-            value:120,
-            density:{
-                enable:true,
-                value_area:800
-            }
-        },
-
-        color:{
-            value:"#8A2BE2"
-        },
-
-        shape:{
-            type:"circle"
-        },
-
-        opacity:{
-            value:0.6
-        },
-
-        size:{
-            value:3,
-            random:true
-        },
-
-        line_linked:{
-            enable:true,
-            distance:150,
-            color:"#8A2BE2",
-            opacity:0.5,
-            width:1
-        },
-
-        move:{
-            enable:true,
-            speed:2,
-            random:true,
-            straight:false,
-            out_mode:"out"
-        }
-
-    },
-
-    interactivity:{
-
-        detect_on:"canvas",
-
-        events:{
-
-            onhover:{
-                enable:true,
-                mode:"grab"
-            },
-
-            onclick:{
-                enable:true,
-                mode:"push"
-            },
-
-            resize:true
-
-        },
-
-        modes:{
-
-            grab:{
-                distance:200,
-                line_linked:{
-                    opacity:1
-                }
-            },
-
-            push:{
-                particles_nb:5
-            }
-
-        }
-
-    },
-
-    retina_detect:true
-
-});
-
-</script>
-
-    
 </body>
 
 </html>
