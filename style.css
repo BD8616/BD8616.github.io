@@ -179,6 +179,8 @@ body{
     position:relative;
 
     z-index:2;
+    
+    pointer-events:none;
 
     min-height:80vh;
 
